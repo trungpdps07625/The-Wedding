@@ -1,0 +1,37 @@
+<!-- ////////////// HEADER ////////////// -->
+header
+	.container
+		nav.navbar.navbar-expand-lg
+			a.navbar-brand(href="#") 
+				img(src="./img/logo.png", alt="Logo")
+			//- Đây là nút sẽ hiển thị trong mobile
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+				span.fa.fa-bars
+			#fullStackMenu.collapse.navbar-collapse
+				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
+				.mr-auto
+				ul.navbar-nav
+					li.nav-item.dropdown
+						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Giới Thiệu
+						.dropdown-menu(aria-labelledby="dropdownFS")
+							a.dropdown-item(href="#") Nam
+							a.dropdown-item(href="#") Nữ
+					li.nav-item.dropdown
+						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dịch Vụ
+						.dropdown-menu(aria-labelledby="dropdownFS")
+							a.dropdown-item(href="#") Nam
+							a.dropdown-item(href="#") Nữ
+					li.nav-item.active
+						a.nav-link(href="index.html") Sự Kiện Nổi Bật
+					li.nav-item
+						a.nav-link(href="services.html") Tin Tức - Sự Kiện
+					li.nav-item.dropdown
+						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Hỗ Trợ
+						.dropdown-menu(aria-labelledby="dropdownFS")
+							a.dropdown-item(href="#") Nam
+							a.dropdown-item(href="#") Nữ
+					li.nav-item
+						a.nav-link(href="about.html") Tuyển Dụng
+					li.nav-item
+						a.nav-link(href="contact.html") Liên hệ
+<!-- ////////////// HEADER ////////////// -->
